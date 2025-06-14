@@ -12,6 +12,8 @@ Furthermore, we implement a Proof of Concept of Bellovin and Merritt's EKE schem
 
 # Steps to run the project
 
+On 1-5, choose either `dh` - Diffie Hellman or `rsa`- RSA as the underlying KA. The `--debug` flag is optional.
+
 1. Install dependencies using pipenv (only in the first time starting the project)
 
 ```bash
@@ -45,4 +47,30 @@ eke --debug client --protocol rsa/dh --host 127.0.0.1 --port 9999
 ```bash
 pipenv shell
 eke --debug client --protocol rsa/dh --host 127.0.0.1 --port 8888
+```
+
+6. Allowing Identity Element in Diffie-Hellman Attack
+
+(in different terminal windows)
+
+```bash
+pipenv shell
+
+eke  server --protocol dh
+eke  mitm --protocol dh-vuln1
+eke  client --protocol dh-vuln1
+
+```
+
+7. A Man-In-The-Middle attack for plain Diffie-Hellman
+
+(in different terminal windows)
+
+```bash
+pipenv shell
+
+eke  server --protocol dh
+eke  mitm --protocol dh-vuln2
+eke  client --protocol dh-vuln2
+
 ```
