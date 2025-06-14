@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eke"
+version = "1"
+
+dependencies = [
+  "click",
+]
+
+[project.scripts]
+eke = "eke.cli:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
