@@ -6,6 +6,10 @@ We provide a implementation of Bellovin and Merritt's EKE scheme in python, usin
 
 Furthermore, we implement a Proof of Concept of Bellovin and Merritt's EKE scheme using Diffie-Hellman as the symmetric cipher. Furthermore, we implement some of the attacks mentioned in our chosen paper.
 
+# Test run
+
+[![Proof of Concept](./poc.mp4)]
+
 # Steps to run the project
 
 1. Install dependencies using pipenv (only in the first time starting the project)
