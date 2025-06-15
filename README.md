@@ -4,7 +4,7 @@ This repository consists of the code used in our project for the Course **Crypto
 
 We provide a implementation of Bellovin and Merritt's EKE scheme in python, using RSA as the symmetric cipher.
 
-Furthermore, we implement a Proof of Concept of Bellovin and Merritt's EKE scheme using Diffie-Hellman as the symmetric cipher. Furthermore, we implement some of the attacks mentioned in our chosen paper.
+Furthermore, we implement Bellovin and Merritt's EKE scheme using Diffie-Hellman as the symmetric cipher. We also implement some of the attacks mentioned in our chosen paper.
 
 # Test run
 
